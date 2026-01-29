@@ -84,6 +84,13 @@ body {
   color: white;
 }
 
+.contact {
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
 .nav-right :hover{
     opacity: 0.7;
 }
