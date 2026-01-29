@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SpaceX | Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #000;
+    --panel: #0b0d10;
+    --text: #ffffff;
+    --muted: #9aa0a6;
+    --accent: #0057ff;
+    --border: #1c1f26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0a0f1f, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 480px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 0 60px rgba(0,87,255,0.15);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    background: #020409;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent);
+}
+
+textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #0057ff, #00a2ff);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0,87,255,0.4);
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contact-container">
+    <div class="logo">SPACEX</div>
+    <div class="subtitle">Contact & Inquiries</div>
+
+    <form onsubmit="handleSubmit(event)">
+
+    <div>
+        <label>Full Name</label>
+        <input type="text" required />
+    </div>
+
+    <div>
+        <label>Email Address</label>
+        <input type="email" required />
+    </div>
+
+    <div>
+        <label>Subject</label>
+        <input type="text" required />
+    </div>
+
+    <div>
+        <label>Message</label>
+        <textarea required></textarea>
+    </div>
+
+    <button type="submit">SEND MESSAGE</button>
+
+</form>
+
+<div class="footer-note">
+    UI concept only By SARAM JAWAD · Not affiliated with SpaceX
+    </div>
+</div>
+
+<script>
+function handleSubmit(e) {
+    e.preventDefault();
+    alert("Message sent successfully.");
+}
+</script>
+
+</body>
+</html>
