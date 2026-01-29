@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Launches | SpaceX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #000;
+    --panel: #0b0d10;
+    --text: #ffffff;
+    --muted: #9aa0a6;
+    --accent: #0057ff;
+    --border: #1c1f26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0a0f1f, #000);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.launch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.launch-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.launch-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0,87,255,0.25);
+}
+
+.launch-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.launch-card span {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.launch-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 14px;
+    color: #d1d5db;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    background: rgba(0,87,255,0.15);
+    color: var(--accent);
+    border: 1px solid rgba(0,87,255,0.4);
+}
+
+.footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.footer strong {
+    color: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="logo">SPACEX</div>
+    <h2 class="section-title">LAUNCHES</h2>
+
+    <div class="launch-grid">
+
+    <div class="launch-card">
+        <h3>Falcon 9 · Starlink Mission</h3>
+        <span>Low Earth Orbit</span>
+        <p>
+            Falcon 9 delivers Starlink satellites to orbit, expanding global
+            broadband coverage with reusable launch technology.
+        </p>
+        <div class="badge">SUCCESS</div>
+    </div>
+
+    <div class="launch-card">
+        <h3>Falcon Heavy · Demo Flight</h3>
+        <span>Deep Space</span>
+        <p>
+            The world’s most powerful operational rocket launches with
+            synchronized booster landings.
+        </p>
+        <div class="badge">HISTORIC</div>
+    </div>
+
+    <div class="launch-card">
+        <h3>Dragon · ISS Resupply</h3>
+        <span>International Space Station</span>
+        <p>
+            Dragon autonomously delivers cargo to the ISS and safely returns
+            scientific payloads to Earth.
+        </p>
+        <div class="badge">COMPLETED</div>
+    </div>
+
+    <div class="launch-card">
+        <h3>Starship · Orbital Test</h3>
+        <span>Next-Generation Vehicle</span>
+        <p>
+            Starship undergoes integrated flight testing to enable
+            interplanetary missions and full reusability.
+        </p>
+        <div class="badge">TEST FLIGHT</div>
+    </div>
+
+</div>
+
+<div class="footer">
+    UI Concept Page · Designed by <strong>Saram Jawad</strong>  
+    <br>
+    Not affiliated with SpaceX
+</div>
+
+</div>
+
+</body>
+</html>
